@@ -1,0 +1,54 @@
+// main: ./main.scss
+
+.main-wrapper {
+  width: 100%;     /* Giới hạn chiều rộng tối đa là 400px */
+  padding: 40px;           /* Padding xung quanh */
+  border: 1px solid #838383; /* Đường viền màu xám */
+  border-radius: 15px;     /* Bo tròn góc */
+  background-color: rgba(255, 255, 255, 0.5); /* Màu nền trong suốt */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Bóng đổ nhẹ */
+  text-align: center;       /* Căn giữa văn bản */
+  color: #ffffff;
+  text-shadow: 1px 1px 1px $dark-grey;
+}
+
+
+.timer-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.start-stop,
+.reset {
+  font-size: 1.5rem;
+}
+
+.icon {
+  filter: drop-shadow(1px 1px 1px $dark-grey);
+}
+
+.timer-label {
+  font-size: 1.8rem;
+
+  margin-top: 25px;
+}
+
+.time-left {
+  width: 160px;
+  color: #fffffb;
+  p {
+    font-size: 3.5rem;
+    text-shadow: 2px 1px 3px $dark-grey;
+  }
+
+  hr {
+    height: 2px;
+    border: 1px solid black;
+    box-shadow: 1px 1px 2px $dark-grey;
+  }
+}
+
+.warning {
+  color: orange;
+}

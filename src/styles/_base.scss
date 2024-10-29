@@ -1,0 +1,59 @@
+// main: ./main.scss
+
+$dark-grey: #262525;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+  font-family: 'Righteous', cursive;
+
+  height: 100vh;
+
+  background-image: url(../media/bg.gif);
+  background-repeat: no-repeat; /* Không lặp lại hình ảnh */
+  background-position: center; /* Căn giữa hình ảnh */
+  background-size: cover; /* Kích thước hình ảnh để bao phủ toàn bộ màn hình */
+}
+
+button {
+  width: 50px;
+  height: 50px;
+
+  display: inline-block;
+
+  border: none;
+  border-radius: 100%;
+  background-color: transparent;
+
+  cursor: pointer;
+
+  color: black;
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: 1;
+  text-decoration: none;
+
+  &:focus,
+  &:hover {
+    outline-style: none;
+    color: #ff8718;
+    color: blue;
+    background-color: #c1c1c1;
+  }
+  &:active {
+    transform: scale(0.93);
+  }
+}
